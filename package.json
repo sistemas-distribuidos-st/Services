@@ -1,0 +1,22 @@
+{
+  "name": "services",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sistemas-distribuidos-st/Services.git"
+  },
+  "author": "Andrés Chaparro Yohan Caro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sistemas-distribuidos-st/Services/issues"
+  },
+  "homepage": "https://github.com/sistemas-distribuidos-st/Services#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
