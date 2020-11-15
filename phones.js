@@ -13,8 +13,14 @@ app.get('/phones/', (req, res) => {
 
 app.get('/phones/:id', (req, res) => {
     console.log(req.params)
-    var i = phones[req.params.id]
-    res.send(i.brand + " - " + i.reference + " - " + i.price)
+    var cant = phones.length
+    if (req.params.id < cant) {
+        var i = phones[req.params.id]
+        res.send(i.brand + " - " + i.reference + " - " + i.price)
+    } else {
+        res.send("No existe")
+    }
+
 })
 
 app.post('/phones/add', (req, res) => {
