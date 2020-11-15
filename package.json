@@ -18,5 +18,8 @@
   "homepage": "https://github.com/sistemas-distribuidos-st/Services#readme",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
   }
 }
