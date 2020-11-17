@@ -6,7 +6,12 @@ app.use(express.json());
 app.use(express.urlencoded({extended:false}));
 
 const movies=[
-	{name:"Parasite", year:2019, id:1}
+	{name:"Parasite", year:2019, id:1},
+	{name:"Sonic", year:2020, id:2},
+	{name:"Misión de rescate", year:2020, id:3},
+	{name:"La rebelión", year:2019, id:4},
+	{name:"Réplicas", year:2018, id:5},
+	{name:"Extinción", year:2018, id:6}
 ];
 
 //create
