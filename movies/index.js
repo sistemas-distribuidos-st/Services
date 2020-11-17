@@ -1,10 +1,9 @@
 const express = require('express')
-var bodyParser = require('body-parser')
 const app = express()
-const port = 3000
+const port = 3001
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: false}));
+app.use(express.json());
+app.use(express.urlencoded({extended:false}));
 
 const movies=[
 	{name:"Parasite", year:2019, id:1}
