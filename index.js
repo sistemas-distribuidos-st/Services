@@ -5,7 +5,8 @@ const axios = require('axios')
 
 Promise.all([
 	axios.get('http://localhost:3001/movies'), 
-	axios.get('http://localhost:3002/clothes')
+	axios.get('http://localhost:3002/clothes'), 
+	axios.get('http://localhost:3003/phones')
 ]).then(resps =>{
 	let data = [];
 

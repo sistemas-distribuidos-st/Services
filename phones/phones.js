@@ -1,14 +1,14 @@
 const express = require('express')
 const app = express()
-const port = 3000
+const port = 3003
 const phones = [{ id: 0, brand: "xiaomi", reference: "Redmi Note 9", price: "590000" },
     { id: 1, brand: "Alcatel", reference: "Pop 9", price: "4500000" }
 ]
 
 app.use(express.json())
 
-app.get('/phones/', (req, res) => {
-    res.send(":id -> borrar | /add -> añadir | /delete/:id -> eliminar")
+app.get('/phones', (req, res) => {
+    res.send(phones)
 })
 
 app.get('/phones/:id', (req, res) => {
